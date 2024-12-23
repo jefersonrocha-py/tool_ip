@@ -1,0 +1,8 @@
+# Use uma imagem base do Nginx para servir os arquivos
+FROM nginx:alpine
+
+# Copia os arquivos do frontend
+COPY frontend/ /usr/share/nginx/html
+
+# Exponha a porta 80 para o serviço web
+EXPOSE 80

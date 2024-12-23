@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferramentas de Rede</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <h1>Ferramentas de Rede</h1>
+        <div class="tools">
+            <div class="tool">
+                <h2>Scanner de Rede</h2>
+                <form id="network-scan-form">
+                    <input type="text" id="network" placeholder="Digite a rede (e.g., 192.168.1.0/24)" required>
+                    <button type="submit">Escanear</button>
+                </form>
+                <div id="network-results"></div>
+            </div>
+            <div class="tool">
+                <h2>Scanner de Portas</h2>
+                <form id="port-scan-form">
+                    <input type="text" id="host" placeholder="Digite o host (e.g., 192.168.1.1)" required>
+                    <input type="text" id="ports" placeholder="Digite as portas (e.g., 80,443)" required>
+                    <button type="submit">Escanear</button>
+                </form>
+                <div id="port-results"></div>
+            </div>
+            <div class="tool">
+                <h2>Calculadora de IP</h2>
+                <form id="ip-calc-form">
+                    <input type="text" id="ip" placeholder="Digite o IP (e.g., 192.168.1.1)" required>
+                    <input type="text" id="mask" placeholder="Digite a máscara (e.g., 24)" required>
+                    <button type="submit">Calcular</button>
+                </form>
+                <div id="ip-results"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles-config.js"></script>
+</body>
+</html>
