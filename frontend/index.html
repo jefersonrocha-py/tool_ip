@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ferramentas de Rede</title>
+    <title>Kit Tool Network</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,14 +11,17 @@
     <div class="container">
         <h1>Kit Tool Network</h1>
         <div class="tools">
+            <!-- Network Scanner -->
             <div class="tool">
                 <h2>Scanner de Rede</h2>
                 <form id="network-scan-form">
                     <input type="text" id="network" placeholder="Digite a rede (e.g., 192.168.1.0/24)" required>
-                    <button type="submit">Run </button>
+                    <button type="submit">Run</button>
                 </form>
                 <div id="network-results"></div>
             </div>
+
+            <!-- Port Scanner -->
             <div class="tool">
                 <h2>Scanner de Portas</h2>
                 <form id="port-scan-form">
@@ -28,6 +31,8 @@
                 </form>
                 <div id="port-results"></div>
             </div>
+
+            <!-- IP Calculator -->
             <div class="tool">
                 <h2>Calculadora de IP</h2>
                 <form id="ip-calc-form">
@@ -39,8 +44,22 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+
+
+
+    <!-- Cookie Consent -->
+    <div id="cookie-consent">
+        <p>Este site utiliza cookies para melhorar sua experiência. <a href="#">Saiba mais</a>.</p>
+        <button id="accept-cookies">Aceitar</button>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>Copyright © NetDevOps Academy - Jeferson Rocha</p>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="particles-config.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
